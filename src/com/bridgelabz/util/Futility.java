@@ -202,9 +202,12 @@ static int i,j;
 	static int count=0;
 	public static void  Functions(int a[],int noofcoupon)
 	{
+		System.out.println("coupon rang ");
 		for(int i=0;i<noofcoupon;)
 		{
-			int Randomno=(int)(Math.random()*noofcoupon);
+			
+	
+			int Randomno=100000+(int)(Math.random()*(999999-100000));
 			//System.out.println(Randomno);
 				int found=0;
 			for(int j=i-1;j>=0;j--)

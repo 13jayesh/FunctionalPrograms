@@ -8,6 +8,7 @@
 import java.util.Scanner;
 public class TicTac
 	{
+	static int i;
 	
 	public static char A[][]=new char[3][3];        
 	public static char  user ='x';
@@ -29,7 +30,7 @@ public class TicTac
 		{
 		System.out.println("compature is 1st");
 		computer(A);
-		
+		int i;
 
 		}
 
@@ -56,7 +57,7 @@ public class TicTac
 					computer(A);
 			}
 			else{
-				System.out.println("Non Empty Feild");
+				int i;		System.out.println("Non Empty Feild");
 				User(A);
 			}
 			sc.close();
@@ -88,11 +89,11 @@ public class TicTac
 
 	public static boolean computerwin(char A[][])
 		{
-		if((A[0][0]=='o' && A[0][1]=='o' && A[0][2]=='o') ||
-		   (A[0][0]=='o' && A[1][0]=='o' && A[2][0]=='o') ||
-		   (A[0][2]=='o' && A[1][2]=='o' && A[2][2]=='o') ||
-		   (A[1][0]=='o' && A[1][1]=='o' && A[1][2]=='o') ||
-		   (A[2][0]=='o' && A[2][1]=='o' && A[2][2]=='o') ||
+
+
+	if((A[0][0]=='o' && A[0][1]=='o' && A[0][2]=='o') ||
+		   (A[i][0]=='o' && A[i][1]=='o' && A[i][2]=='o') ||
+		   (A[0][i]=='o' && A[1][i]=='o' && A[2][i]=='o') ||
 		   (A[0][0]=='o' && A[1][1]=='o' && A[2][2]=='o') ||
 		   (A[0][2]=='o' && A[1][1]=='o' && A[2][0]=='o'))
 			{
@@ -104,11 +105,10 @@ public class TicTac
 
 	public static boolean userwin(char A[][])
 		  {
-		 if((A[0][0]=='x' && A[0][1]=='x' && A[0][2]=='x') ||
-		    (A[0][0]=='x' && A[1][0]=='x' && A[2][0]=='x') ||
+		 if((A[i][0]=='x' && A[i][1]=='x' && A[i][2]=='x') ||
+		    (A[0][i]=='x' && A[1][i]=='x' && A[2][i]=='x') ||
 		    (A[0][2]=='x' && A[1][2]=='x' && A[2][2]=='x') ||
-		    (A[1][0]=='o' && A[1][1]=='o' && A[1][2]=='o') ||
-		    (A[2][0]=='x' && A[2][1]=='x' && A[2][2]=='x') ||
+
 		    (A[0][0]=='x' && A[1][1]=='x' && A[2][2]=='x') ||
 		    (A[0][2]=='x' && A[1][1]=='x' && A[2][0]=='x')) 
 			{

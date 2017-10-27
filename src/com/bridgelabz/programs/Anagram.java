@@ -136,7 +136,7 @@ public static void Primarypalindrom()
 			 
 			
 	 
-public static void main (String args[])
+public static void main (String args[])	
 	{
 	
 		System.out.println("enter choice-1)anagram...2)primary anagram no ");
